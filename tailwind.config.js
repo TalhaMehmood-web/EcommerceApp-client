@@ -9,8 +9,8 @@ export const theme = {
       "icon_color": "#9fa6bc",
       "input-bg": "#373e53"
     },
-    screens:{
-      
+    screens: {
+      "xs": "505px"
     }
   },
 };

@@ -135,11 +135,11 @@ const CustomerCheckOut = () => {
 
     return (
         <>
-            <div className='container mx-auto px-[5rem] mt-8'>
+            <div className='container mx-auto px-4 2xl:px-[5rem] mt-8  '>
                 <p className='text-white text-3xl font-bold'>Check Out</p>
-                <div className='flex items-start justify-between'>
+                <div className='flex flex-col lg:flex-row items-center lg:mb-0 mb-4 lg:items-start justify-between '>
                     <div>
-                        <div className='mt-4 border-b-2 border-slate-700 py-4'>
+                        <div className='mt-4 border-b-2 border-slate-700 py-4 mr-4'>
                             <p className='text-white text-2xl font-bold mb-3'>Shipping Address</p>
                             <div className='flex flex-col justify-between h-[10rem]'>
                                 <div className='flex items-center justify-around'>
@@ -169,9 +169,9 @@ const CustomerCheckOut = () => {
                             </div>
                         </div>
 
-                        <div className='mt-4 border-b-2 border-slate-700 py-4 pb-12'>
+                        <div className='mt-4 border-b-2 border-slate-700  py-4 md:h-fit xs:h-[20rem] pb-12'>
                             <p className='text-white text-2xl font-bold mb-3'>Deliver Type</p>
-                            <div className='grid grid-cols-2 h-[10rem] gap-y-8 gap-x-4'>
+                            <div className='grid grid-cols-1 xs:justify-normal  xs:grid-cols-2  gap-y-8 gap-x-4'>
                                 <CheckoutPayment type={"Free Shipping"} cost={0} specs={"Get Free Shipped products in Time!"} onRadioChange={() => handleRadioChange("Free Shipping", 0)} selectedType={selectedType} />
                                 <CheckoutPayment type={"Two days Shipping"} cost={20} specs={"Everything faster with a minimum shipping fee."} onRadioChange={() => handleRadioChange("Two days Shipping", 20)} selectedType={selectedType} />
                                 <CheckoutPayment type={"Standard Shipping"} cost={10} specs={"Get timely delivery with economy shipping."} onRadioChange={() => handleRadioChange("Standard Shipping", 10)} selectedType={selectedType} />
@@ -237,7 +237,7 @@ const CustomerCheckOut = () => {
                             </button>
                         </div>
                     </div>
-                    <div className="border border-slate-700 rounded-lg w-[30rem] h-full p-2">
+                    <div className="border  border-slate-700 rounded-lg w-11/12 lg:w-[30rem] h-full p-2">
                         <div className='flex items-center justify-between px-3 my-2'>
                             <p className='text-white font-bold text-3xl'>Summary</p>
                             <p className='text-md text-blue-600 underline font-semibold cursor-pointer' onClick={navigateToCart}>Edit Cart</p>

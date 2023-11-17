@@ -45,7 +45,7 @@ const ForgetPassword = () => {
         <div className='auth-main'>
             <p className='auth-title mb-4' >Forget Password?</p>
             <form onSubmit={handleSubmit} autoComplete='on' className='auth-form' >
-                <p className='text-center' >Enter the email associated with your account <br />
+                <p className='text-center' >Enter the email associated with your account
                     we will send you an OTP to reset your password</p>
                 <input className='auth-input' type="text" value={email} placeholder='Enter your email' onChange={(e) => {
                     setEmail(e.target.value)

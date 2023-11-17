@@ -84,6 +84,7 @@ const Register = () => {
         setShowPass(!showPass)
     }
     return (
+
         <div className='auth-main'>
             <h2 className='auth-title text-4xl text-pink' >Register</h2>
             <form onSubmit={handleSubmit} autoComplete='on' className='auth-form' >
