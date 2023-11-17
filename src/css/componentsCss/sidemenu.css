@@ -1,0 +1,69 @@
+.side-menu {
+  /* border-right: 1px solid rgb(141, 141, 141); */
+  height: 100%;
+  /* overflow-y: scroll; */
+  /* background: #141824; */
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  overflow-x: hidden;
+}
+
+.side-menu::-webkit-scrollbar {
+  width: 4px;
+}
+
+.side-menu::-webkit-scrollbar-thumb {
+  background: rgba(141, 141, 141, 0.7);
+  border-radius: 10px;
+}
+
+.side-menu::-webkit-scrollbar-thumb:hover {
+  background: rgba(141, 141, 141, 1);
+}
+.route-style {
+  display: flex;
+  color: white;
+  justify-content: space-around;
+  align-items: center;
+}
+.route-style {
+  margin-left: 30px;
+  color: #b1bacf;
+}
+.route-style span {
+  margin-right: 10px;
+}
+.admin-routes {
+  text-decoration: none;
+  list-style: none;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  width: 100%;
+  padding: 14px 0px;
+
+  border: 1px solid transparent;
+}
+
+.admin-routes:hover .route-style {
+  color: white;
+}
+.rotate {
+  transform: rotate(180deg);
+}
+.c-hover {
+  text-decoration: none;
+  list-style: none;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  width: 100%;
+
+  cursor: pointer;
+}
+.c-hover:hover .route-style {
+  color: white;
+}

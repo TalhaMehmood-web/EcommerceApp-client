@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Big Shoulders Display", sans-serif;
+  font-family: "Outfit", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-family: "Space Grotesk", sans-serif;
+}
+/* YourComponent.css */
+
+.custom-transition {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-in-out;
+}
+
+.custom-transition.expanded {
+  max-height: 20rem; /* Adjust this value as needed */
+}
+/* Custom scrollbar styles */
+.scroll::-webkit-scrollbar {
+  width: 2px; /* Adjust the width as needed */
+}
+
+.scroll::-webkit-scrollbar-thumb {
+  background-color: rgba(39, 39, 66, 0.719); /* Color of the scrollbar thumb */
+  border-radius: 20px; /* Adjust the border radius */
+}
+
+/* Optional: Style scrollbar track */
+.scroll::-webkit-scrollbar-track {
+  background: #e5e7eb; /* Color of the scrollbar track */
+}
+.no-scroll::-webkit-scrollbar {
+  width: 0px;
+}

@@ -1,0 +1,20 @@
+.navbar {
+  /* background: #141824; */
+  color: white;
+  /* padding: 10px 0px; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
+
+.nav_mid input {
+  width: 25rem;
+  height: 2rem;
+  padding: 0px 10px 0px 20px;
+  outline: none;
+  border: 1px solid gray;
+  background: transparent;
+  color: white;
+  border-radius: 20px;
+}
